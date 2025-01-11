@@ -1,2 +1,7 @@
 
 .codegpt
+working/*
+cache/*
+uploads/*
+playground.ipynb
+telegram_test.ipynb
