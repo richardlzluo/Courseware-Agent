@@ -1,7 +1,8 @@
 
 .codegpt
-working/*
-cache/*
-uploads/*
+/working/*
+/cache/*
+/uploads/*
 playground.ipynb
 telegram_test.ipynb
+courseware_agent.code-workspace
