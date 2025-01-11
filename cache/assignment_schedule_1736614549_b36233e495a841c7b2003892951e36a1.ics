@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+PRODID:-//Richard Luo//Courseware-to-ICS//
+BEGIN:VEVENT
+SUMMARY:Assignment #1
+DTSTART:20240520T235959
+DTEND:20240520T235959
+DTSTAMP:20250111T115549Z
+DESCRIPTION:Formulate actionable insights on the recording of the webinar 
+ 'The Challenges of Applying AI Ethics'. Minimum 5 actionable statements on
+  what you suggest should be done with what you learned from the webinar.
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment #2
+DTSTART:20240612T235959
+DTEND:20240612T235959
+DTSTAMP:20250111T115549Z
+DESCRIPTION:Analyzing bias. A 3-7 pages report including: Introduction exp
+ laining the background and the use case and providing a formulation of the
+  problem\; Data and Mechanism of Bias\; Mitigation describing what mechani
+ sm was used to address the biases.
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Assignment #3
+DTSTART:20240614T235959
+DTEND:20240614T235959
+DTSTAMP:20250111T115549Z
+DESCRIPTION:Trustworthy AI Assessment. A 3-7 pages report: Select one of t
+ he AI system/solution from assignment 2. Assess the AI system for 'trustwo
+ rthiness' based on the EU 'Framework for Trustworthy AI'\, using the Z-ins
+ pection process.
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Take home exam
+DTSTART:20240624T235959
+DTEND:20240624T235959
+DTSTAMP:20250111T115549Z
+DESCRIPTION:Details will be provided at the last class session.
+END:VEVENT
+END:VCALENDAR
