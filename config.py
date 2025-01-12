@@ -15,3 +15,5 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = "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"
 os.environ["TAVILY_API_KEY"] = "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"
 os.environ["LANGCHAIN_PROJECT"] = "courseware-ics"
+
+# Hello world
