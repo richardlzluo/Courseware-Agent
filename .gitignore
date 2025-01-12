@@ -9,4 +9,5 @@ __pycache__/*
 playground.ipynb
 telegram_test.ipynb
 courseware_agent.code-workspace
+config.py
 play.py
