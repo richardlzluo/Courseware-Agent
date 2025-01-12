@@ -76,7 +76,7 @@ If the whole schedule is not available, just fill the has_schedule property in t
 def extract_calendar(state: MessagesState):
     generation_instructions = SystemMessage(content=SYSTEM_PROMPT)
     messages = [generation_instructions, state["messages"][-1]]
-    structured_llm = llm.with_structured_output(Schedule)
+    structured_llm = llm.with_structured_output(Schedule, method="function_calling")
     result = structured_llm.invoke(messages)
     return {"messages": AIMessage(content=[{"result": result}])}
 
