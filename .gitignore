@@ -4,6 +4,7 @@ working/*
 !working/.gitkeep
 cache/*
 !cache/.gitkeep
+.ipynb_checkpoints
 playground.ipynb
 telegram_test.ipynb
 courseware_agent.code-workspace
