@@ -8,6 +8,6 @@ cache/*
 __pycache__/*
 playground.ipynb
 telegram_test.ipynb
-courseware_agent.code-workspace
+dev_courseware_agent.code-workspace
 config.py
 play.py
