@@ -1,6 +1,6 @@
-# courseware_agent 📚
+# Courseware Agent 📚
 
-courseware_agent is a Telegram-based chatbot that helps university students generate a calendar of assignments or exam deadlines from their course outlines. The project uses LangChain with OpenAI's API to process the course outline PDF and generate a `.ics` calendar file, which users can easily integrate into their preferred calendar application.
+Courseware_agent is a Telegram-based chatbot that helps university students generate a calendar of assignments or exam deadlines from their course outlines. The project uses LangChain with OpenAI's API to process the course outline PDF and generate a `.ics` calendar file, which users can easily integrate into their preferred calendar application.
 
 ## Features ✨
 
