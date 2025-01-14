@@ -11,7 +11,7 @@ courseware_agent is a Telegram-based chatbot that helps university students gene
 
 ## Requirements 📋
 
-- Python 3.8+
+- Python 3.10+
 - Telegram bot token
 - OpenAI API key
 
@@ -37,24 +37,26 @@ courseware_agent is a Telegram-based chatbot that helps university students gene
    pip install -r requirements.txt
    ```
 
-4. **Configure Environment Variables**
+4. **Configure the `config.py` File**
 
-   Create a `.env` file in the root directory and add the following:
+   Open the `config.py` file in the project directory and fill in the following variables:
 
-   ```env
-   TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-   OPENAI_API_KEY=your_openai_api_key
+   ```python
+   TELEGRAM_BOT_TOKEN = "your_telegram_bot_token"
+   TELEGRAM_CHANNEL_ID = "your_telegram_channel_id"
+   OPENAI_API_KEY = "your_openai_api_key"
    ```
 
 5. **Run the Project**
 
    ```bash
-   python app.py
+   chmod +x run_agent
+   ./run_agent
    ```
 
 ## Usage 🚀
 
-1. Start a chat with the Telegram bot `@raven_agent_bot`.
+1. Start a chat with the Telegram bot [@raven_agent_bot](https://t.me/raven_agent_bot).
 2. Upload your course outline as a PDF file.
 3. Wait for the bot to process the file and generate a `.ics` calendar file.
 4. Download the `.ics` file and import it into your calendar application.
@@ -63,12 +65,14 @@ courseware_agent is a Telegram-based chatbot that helps university students gene
 
 ```plaintext
 courseware_agent/
-├── app.py               # Main application logic
+├── cache/               # Cache files
+├── working/             # Working directory for temporary files
+├── README.md            # Project documentation
+├── config.py            # Configuration file for API keys and tokens
+├── pdf_to_ics_graph.py  # PDF to ICS processing logic
 ├── requirements.txt     # Python dependencies
-├── utils/               # Helper functions and utilities
-├── templates/           # Predefined templates for processing
-├── .env.example         # Example environment file
-└── README.md            # Project documentation
+├── run_agent            # Script to run the agent
+├── telegram_bot_run.py  # Telegram bot runner
 ```
 
 ## Contributing 🤝
@@ -81,4 +85,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact 📬
 
-For any questions or feedback, feel free to reach out via the issues section or directly contact me on Telegram.
+For any questions or feedback, feel free to reach out via the issues section, directly contact me on Telegram, or email me at [lizhaoluo@cmail.carleton.ca](mailto:lizhaoluo@cmail.carleton.ca).
