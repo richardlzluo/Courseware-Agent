@@ -20,7 +20,7 @@ Courseware Agent is a <img src="https://upload.wikimedia.org/wikipedia/commons/8
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/courseware_agent.git
+   git clone https://github.com/richardlzluo/courseware_agent.git
    cd courseware_agent
    ```
 
