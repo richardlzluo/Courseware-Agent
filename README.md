@@ -7,7 +7,7 @@ courseware_agent is a Telegram-based chatbot that helps university students gene
 - **PDF Processing**: Upload a course outline PDF to the chatbot.
 - **Deadline Extraction**: Automatically identifies assignments and exam deadlines.
 - **Calendar Generation**: Generates an `.ics` file for seamless integration into calendar apps.
-- **User-Friendly Interaction**: Operates entirely through Telegram via `@raven_agent_bot`.
+- **User-Friendly Interaction**: Operates entirely through Telegram via [@raven_agent_bot](https://t.me/raven_agent_bot).
 
 ## Requirements 📋
 
