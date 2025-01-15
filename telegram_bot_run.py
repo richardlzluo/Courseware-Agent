@@ -35,7 +35,7 @@ __*Be cautious*__:
 \* I just accept PDF files, don't send me anything else\.
 \* I will return a \.ics file, which is a calendar file\. Use a PC or Mac🖥️ to import it\. Do not use an iPhone 📵\. It doesn't work with \.ics file\. You can synch it into you iPhone using iCloud or send the \.ics file through an email\. iPhone work with \.ics file in the Mail app\. You may also try it on an Ardoid phone\. I don't know if it works\.
 \* Currently, I can only finish this single task, don't even try to instruct me to do anything else\. I won't response🤷‍♂️\. 
-\* The calendar is generated using an LLM\. I can't guarantee the accuracy\. Please __*double check with the utmost caution*__\.
+\* The calendar is generated using an LLM\. I can't guarantee the accuracy\. Please __*double check it with the utmost caution*__\.
 """
 
 
