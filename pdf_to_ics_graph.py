@@ -62,7 +62,7 @@ class Schedule(BaseModel):
     follow_up: str = Field(description="Follow up message to inform the user to upload another file.")
     schedule: List[ScheduleEntry] = Field(description="A list of schedule entries.")
 
-llm = ChatOpenAI(model=Config.chatGPT_model, temperature=0) 
+llm = ChatOpenAI(model=os.getenv("chatGPT_model"), temperature=0) 
 
 SYSTEM_PROMPT = """
 You will be given a document that is the outline of a course. 

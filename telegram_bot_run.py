@@ -63,8 +63,8 @@ async def handle_pdf(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
         await context.bot.send_chat_action(chat_id=chat_id, action=ChatAction.TYPING)
 
         
-        base64_images = pdf_to_base64_images(Config.cache_dir+new_file_name)
-        os.remove(Config.cache_dir+new_file_name)
+        base64_images = pdf_to_base64_images(os.getenv("cache_dir")+new_file_name)
+        os.remove(os.getenv("cache_dir")+new_file_name)
         messages = [HumanMessage(
                         content=[
                             {
@@ -80,12 +80,12 @@ async def handle_pdf(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
             schedule = result["messages"][-1].content[0]['result'].schedule
             cal = get_calendar(schedule)
             ics_file_name = f"assignment_schedule_{int(time.time())}_{uuid.uuid4().hex}.ics"
-            with open(Config.cache_dir+ics_file_name, 'wb') as f:
+            with open(os.getenv("cache_dir")+ics_file_name, 'wb') as f:
                 f.write(cal.to_ical())
                 
             
             try:
-                with open(Config.cache_dir+ics_file_name, 'rb') as file:
+                with open(os.getenv("cache_dir")+ics_file_name, 'rb') as file:
                     await update.message.reply_text("Here is your calendar file:")
                     await context.bot.send_document(
                         chat_id=chat_id,
@@ -104,7 +104,7 @@ async def handle_pdf(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
 
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token(Config.telegram_bot_token).build()
+    application = ApplicationBuilder().token(os.getenv("TELEGRAM_BOT_TOKEN")).build()
     start_handler = CommandHandler('start', start)
     application.add_handler(start_handler)
     application.add_handler(MessageHandler(filters.Document.MimeType("application/pdf"), handle_pdf))
