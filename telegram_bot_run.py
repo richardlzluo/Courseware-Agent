@@ -1,5 +1,5 @@
 
-from config import Config
+from dotenv import load_dotenv
 
 import logging
 from telegram import Update
@@ -13,6 +13,8 @@ import base64
 from PIL import Image
 from io import BytesIO
 import asyncio
+
+load_dotenv()
 
 graph = get_graph()
 

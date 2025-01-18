@@ -1,5 +1,5 @@
 
-from config import Config
+from dotenv import load_dotenv
 import base64
 import io
 import fitz
@@ -18,6 +18,7 @@ from typing import List, Optional
 
 from icalendar import Calendar, Event
 
+load_dotenv()
 
 def pdf_to_base64_images(pdf_path: str):
     pdf_document = fitz.open(pdf_path)
