@@ -1,5 +1,6 @@
 
 .codegpt
+.env
 working/*
 !working/.gitkeep
 cache/*
